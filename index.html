@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>index</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Georgia", "serif";
+      overflow-y: scroll;
+    }
+
+    .hintergrundbild {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .seite {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      min-height: 120vh;
+    }
+
+    .titel {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255,  0.9);
+      color: black;
+      padding: 15px 30px;
+      font-size: 3em;
+      border-radius: 8px;
+      text-align: center;
+      z-index: 10;
+    }
+	  
+	
+
+    .oben-rechts {
+      position: absolute;
+      top: 20px;
+      right: -200px;
+      background: rgba(255, 255, 255,  0.9);
+      color: black;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .oben-rechts .tooltip-text {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 200px;
+      background: rgba(255, 255, 255, 0.9);
+      color: black;
+      padding: 10px 14px;
+      margin-top: 8px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      white-space: normal;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      line-height: 1.4em;
+    }
+
+	 
+    .oben-rechts:hover .tooltip-text {
+      display: block;
+    }
+
+	  .oben-links {
+      position: absolute;
+      top: 20px;
+      right: -200px;
+      background: rgba(255, 255, 255,  0.9);
+      color: black;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      z-index: 10;
+      cursor: pointer;
+    }
+	  
+	   .unten-rechts {
+      position: absolute;
+      top: 220%;
+      right: -200px;
+      background: rgba(255, 255, 255,  0.9);
+      color: black;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      z-index: 10;
+      cursor: pointer;
+	  margin-bottom: 20px;	   
+    }
+	  
+	   .unten-rechts1 {
+      position: absolute;
+      top: 224%;
+      right: -200px;
+      background: rgba(255, 255, 255,  0);
+      color: black;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      z-index: 10;
+      cursor: pointer;
+	  margin-bottom: 20px;	   
+    }
+	  
+    .bildfeld {
+      position: absolute;
+      transition: transform 0.3s ease;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .bildfeld img,
+    .bildfeld video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .bildfeld:hover {
+      transform: scale(1.35);
+    }
+	  
+	  .bildfeld img.hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bildfeld:hover img.normal {
+  display: none;
+}
+
+.bildfeld:hover img.hover {
+  display: block;
+}
+
+
+    .bildtext {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      background: rgba(0, 0, 0, 0);
+      color: white;
+      font-size: 0.8em;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="stuff/index/hintergrund.png" class="hintergrundbild" alt="hintergrund"/>
+
+  <div class="seite">
+    <div class="titel">Tobias Tarnow</div>
+
+    <div class="oben-rechts">
+      Gutes Morgen
+      <div class="tooltip-text">
+       In einer Welt, die bestehende Machtstrukturen mithilfe der digitialen Revolution zu festigen versucht, braucht es Gegenmodelle, die auf ein gutes Morgen zuarbeiten.
+      </div>
+    </div>
+
+    <a href="tooloudtoloop/tooloudtoloop_intro.html" class="bildfeld" style="top: 18%; left: -25%; width: 75%; height: 40%;">
+      <video autoplay muted loop playsinline>
+        <source src="stuff/index/feld1_tooloudtoloop.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="bildtext">Too Loud To Loop?</div>
+    </a>
+
+    <a href="about/about.html" class="bildfeld" style="top: 25%; left: 75%; width: 45%; height: 45%;">
+      <img src="stuff/index/feld2_about.png" width="1020" height="1024" alt="about"/>
+      <div class="bildtext">about</div>
+    </a>
+
+ <a href="onmonitor/onmonitor_intro.html" class="bildfeld" style="top: 125%; left: 20%; width: 40%; height: 50%;">
+  <img class="normal" src="stuff/index/feld3_onmonitor.png" width="3585" height="5377" alt="(on) monitor">
+  <img class="hover" src="stuff/index/feld3_onmonitor_hover.png" width="3585" height="5377" alt="(on) monitor hover">
+  <div class="bildtext">(on) monitor</div>
+</a>
+
+    <a href="OptimisticFutures/of_intro.html" class="bildfeld" style="top: 115%; left: 70%;  width: 40%; height: 50%;">
+      <img src="stuff/index/feld4_optimisticfutures.jpg" width="768" height="1024" alt="Optimistic Futures">
+      <div class="bildtext">Optimistic Futures</div>
+    </a>
+
+    <a href="fuckingfuture/fuckingfuture_intro.html" class="bildfeld" style="top: 73%; left: -1%; width: 60%; height: 32%;">
+      <img src="stuff/index/feld5_fuckingfuture.png" width="1536" height="1024" alt="Fucking Future">
+      <div class="bildtext">Fucking Future</div>
+    </a>
+
+    <a href="keptinblockchains/keptinblockchains_intro.html" class="bildfeld" style="top: 190%; left: -25%; width: 60%; height: 30%;">
+      <img src="stuff/index/feld6_keptinblockchains_russ_juskalian.png" width="700" height="466" alt="Kept in Blockchains"/>
+      <div class="bildtext">Foto: Russ Juskalian - Kept in Blockchains</div>
+    </a>
+
+		 <div class="unten-rechts">
+		portfolio tobi continued ...
+    </div>
+  <div class="unten-rechts1"></div>
+	  
+  </div>
+	
+</body>
+</html>
