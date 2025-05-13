@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>about</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Georgia", "serif";
+      overflow-y: scroll;
+    }
+
+	body {
+  cursor: url('../stuff/index/brokoli.png'), auto;
+}  
+	  
+    .hintergrundbild {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .seite {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      min-height: 120vh;
+    }
+
+    .titel {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.9);
+      color: black;
+      padding: 15px 30px;
+      font-size: 3em;
+      border-radius: 8px;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .oben-links {
+      position: absolute;
+      top: 20px;
+      left: -200px;
+      background: rgba(255, 255, 255, 0.9);
+      color: black;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .zentraltext {
+      margin-top: 150px;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px 30px;
+      border-radius: 8px;
+      font-size: 1.3em;
+      max-width: 5000px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5em;
+      color: black;
+    }
+	 .zentraltext a{ 
+		 color: black;
+	  }
+	  
+  </style>
+</head>
+
+<body>
+  <img src="../stuff/index/hintergrund.png" class="hintergrundbild" alt="hintergrund"/>
+
+  <div class="seite">
+    <div class="titel">About</div>
+
+    <a href="../index.html">
+      <div class="oben-links">
+back      </div>
+    </a>
+
+    <div class="zentraltext">
+		<h3>Tobias Tarnow</h3>
+      Studierte Europäische Medienwissenschaft in Potsdam und setzte einen Fokus auf Reproduktionen bestehender Machtstrukturen im Digitalen sowie Gegenmodelle, die auf ein gutes Morgen zuarbeiten. <br><br>Gestaltet mit einem experimentellen Ansatz intermediale Kunst um Fragestellungen zur gesellschaftlichen Zukunft vorzustellen. <br><br>
+		Bewegt sich außerdem in sozialen (Kultur-) Räumen, in denen Ideen und Perspektiven für einen solidarischen, diversen und kindlichen Austausch im Fokus stehen. Besonders im Bereich der Gestaltung von zivilgesellschaftlicher Bildungs- und Projektarbeit mit jungen Menschen.<br><br>
+		<a href="Lebenslauf_Tarnow.pdf">Lebenslauf_Tarnow.pdf</a>
+    </div>
+
+  </div>
+</body>
+</html>
